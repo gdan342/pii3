@@ -3,7 +3,7 @@ Simple script for installing i3wm in Raspian Lite
  
  # Install i3wm and basic tools
 This will install i3wm and recomended Raspbian tools
-
+     sudo apt-get install git
      git clone https://github.com/gdan42/pii3.git
      cd pii3
      sudo ./pii3install.sh
