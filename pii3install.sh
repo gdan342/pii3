@@ -9,13 +9,13 @@
 # Raspian Buster Lite i3wm Install Script
 
 # Update and Upgrade
-#printf -- 'Updating and Upgrading...'
-sudo apt-get update && sudo apt-get Upgrade
+printf -- 'Updating and Upgrading...'
+sudo apt-get update -y && sudo apt-get upgrade -y
 set -e
 
 # install display server
-#printf -- 'Installing xserver...'
-sudo apt-get install --no-install-recommends xserver-xorg && sudo apt-get install --no-install-recommends xinit --yes
+printf -- 'Installing xserver...'
+sudo apt-get install --no-install-recommends xserver-xorg -y && sudo apt-get install --no-install-recommends xinit --yes
 set -e
 sudo mkfile ~/.xinitrc
 echo '#!/bin/sh' >> ~/.xinitrc
