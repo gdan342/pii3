@@ -1,4 +1,5 @@
 #!/bin/bash
+set -u
 
 #   ____  _ _ _____   ___           _        _ _
 #  |  _ \(_|_)___ /  |_ _|_ __  ___| |_ __ _| | |
@@ -9,12 +10,10 @@
 # Raspian Buster Lite i3wm Install Script
 
 # Update and Upgrade
-#printf -- 'Updating and Upgrading...'
 sudo apt-get update && sudo apt-get Upgrade --yes
 set -e
 
 # install display server
-printf -- "Installing xserver..."
 sudo apt-get install --no-install-recommends xserver-xorg && sudo apt-get install --no-install-recommends xinit --yes
 set -e
 
@@ -24,7 +23,6 @@ echo 'exec i3' >> ~/.xinitrc
 set -e
 
 # install i3wm
-printf -- "Installing i3 and tools..."
 sudo apt-get install i3 suckless-tools lxterminal dmenu --yes
 set -e
 
