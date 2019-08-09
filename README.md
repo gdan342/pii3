@@ -7,7 +7,7 @@ This will install i3wm and recomended Raspbian tools
      sudo apt-get install git
      git clone https://github.com/gdan42/pii3.git
      cd pii3
-     sudo pii3install.sh
+     sudo bash pii3install.sh
      
 After the script has finished, the system will reboot     
      
@@ -16,5 +16,5 @@ After the script has finished, the system will reboot
 This will install custom config files(i3 config, i3status, bashrc, xrecources)
 
      cd pii3
-     sudo ./pii3custom.sh
+     sudo bash pii3custom.sh
 
