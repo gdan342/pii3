@@ -18,7 +18,9 @@ printf -- 'Installing xserver...'
 sudo apt-get install --no-install-recommends xserver-xorg -y && sudo apt-get install --no-install-recommends xinit --yes
 set -e
 sudo touch ~/.xinitrc
+set -e
 echo '#!/bin/sh' >> ~/.xinitrc
+set -e
 echo 'exec i3' >> ~/.xinitrc
 set -e
 
@@ -36,10 +38,6 @@ sudo apt-get install chromium-browser vlc pcmanfm synaptic --yes
 
 # install pip and pip packages
 sudo apt-get install python-pip --yes
-set -e
-
-# install python packages
-pip install lolcat pywal
 set -e
 
 # Reboot
