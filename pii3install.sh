@@ -10,7 +10,7 @@
 
 # Update and Upgrade
 #printf -- 'Updating and Upgrading...'
-sudo apt-get update && sudo apt-get Upgrade
+sudo apt-get update && sudo apt-get Upgrade --yes
 set -e
 
 # install display server
@@ -28,7 +28,7 @@ sudo apt-get install i3 suckless-tools lxterminal dmenu --yes
 set -e
 
 # install basic tools
-sudo apt-get install htop ranger neofetch feh git tmux links tty-clock wget --yes
+sudo apt-get install htop python-pip ranger neofetch feh git tmux links tty-clock wget --yes
 set -e
 
 # install python packages
