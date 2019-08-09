@@ -13,6 +13,6 @@ After the script has finished, the system will reboot
 
 #  Install custom configs 
 This will install custom config files(i3 config, i3status, bashrc, xrecources)
-
+     cd pii3
      sudo ./pii3custom.sh
 
