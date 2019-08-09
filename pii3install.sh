@@ -18,8 +18,9 @@ printf -- "Installing xserver..."
 sudo apt-get install --no-install-recommends xserver-xorg && sudo apt-get install --no-install-recommends xinit --yes
 set -e
 
-echo "#!/bin/bash" >> ~/.xinitrc
-echo "exec i3" >> ~/.xinitrc
+echo '#!/bin/bash' >> ~/.xinitrc
+set -e
+echo 'exec i3' >> ~/.xinitrc
 set -e
 
 # install i3wm
