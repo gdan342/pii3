@@ -21,7 +21,7 @@ echo 'exec i3' >> ~/.xinitrc
 sudo apt-get install i3 suckless-tools lxterminal dmenu --yes
 
 # install basic tools
-sudo apt-get install htop ranger neofetch feh git  wget --yes
+sudo apt-get install htop ranger neofetch feh tmux wget  --yes
 
 # install graphical tools
 sudo apt-get install chromium-browser vlc pcmanfm synaptic --yes
