@@ -17,7 +17,7 @@ set -e
 printf -- 'Installing xserver...'
 sudo apt-get install --no-install-recommends xserver-xorg -y && sudo apt-get install --no-install-recommends xinit --yes
 set -e
-sudo mkfile ~/.xinitrc
+sudo touch ~/.xinitrc
 echo '#!/bin/sh' >> ~/.xinitrc
 echo 'exec i3' >> ~/.xinitrc
 set -e
