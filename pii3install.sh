@@ -9,7 +9,7 @@
 # Raspian Buster Lite i3wm Install Script
 
 # Update and Upgrade
-sudo apt-get install update && sudo apt-get install Upgrade
+sudo apt-get update && sudo apt-get Upgrade
 
 # install display server
 sudo apt-get install --no-install-recommends xserver-xorg && sudo apt-get install --no-install-recommends xinit --yes
