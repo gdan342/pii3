@@ -13,11 +13,11 @@ set -u
 # Raspian Buster Lite i3wm Install Script
 
 
-echo '      Raspian Lite I3wm Install......'
+echo '     Raspian Lite I3wm Install       '
 
 # Update and Upgrade
 echo '     Updating......'
-sudo apt-get update
+sudo apt-get update --yes
 echo '     Upgrading......'
 sudo apt-get Upgrade --yes
 set -e
@@ -39,7 +39,7 @@ set -e
 
 # install basic tools
 echo '     Installing Dependancies and Basic Tools......'
-sudo apt-get install htop python-pip ranger neofetch pcmanfm feh git tmux links tty-clock wget suckless-tools lxterminal dmenu --yes
+sudo apt-get install leafpad python-pip ranger neofetch pcmanfm feh git tmux links tty-clock wget suckless-tools lxterminal dmenu --yes
 set -e
 
 # install python packages
