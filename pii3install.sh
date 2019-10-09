@@ -52,5 +52,4 @@ set -e
 echo
 # Reboot
 echo '      Rebooting System......'
-echo '      Type startx On Reboot......'
-reboot
+sudo reboot -h 0
