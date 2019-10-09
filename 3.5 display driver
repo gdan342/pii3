@@ -1,0 +1,12 @@
+# Install Drivers For 3.5 HDMI Display
+  Go to kookeye website with links
+     links http://kookye.com/2017/01/18/install-3-5-hdmi-touch-screen-linux-driver-on-raspberry-pi/
+
+  click link for download
+     3) Download Driver to your pc - 3.5" HDMI touch screen driver
+
+  change permissions
+     sudo chmod 777 LCD_show 35hdmi.tar.gz
+     tar -xzvf LCD_show_35hdmi.tar.gz
+     cd LCD_show_35hdmi
+    sudo ./LCD35_720*480  
