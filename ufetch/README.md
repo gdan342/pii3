@@ -1,5 +1,5 @@
 # ufetch
 
-Tiny system info for Unix-like operating systems.
+Raspbian ufetch
 
-![ufetch-openbsd](ufetch-openbsd.png)
+
