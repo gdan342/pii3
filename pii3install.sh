@@ -1,6 +1,11 @@
 #!/bin/bash
 set -u
 
+echo
+echo
+echo '      STARTING......'
+echo
+echo
 echo '    _______ __________________ ______'
 echo '   (  ____ )\__   __/\__   __// ___  \'
 echo '   | (    )|   ) (      ) (   \/   \  \'
