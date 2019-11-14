@@ -46,7 +46,7 @@ set -e
 #create xinitrc
 #echo '     Creating .xinitrc......'
 echo
-sudo mv ~/pii3/.xinitrc ~/
+#sudo mv ~/pii3/.xinitrc ~/
 #echo "#!/bin/bash" >> ~/.xinitrc
 #echo "exec i3" > ~/.xinitrc
 #set -e
