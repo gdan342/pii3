@@ -17,8 +17,11 @@ echo '   |/       \_______/\_______/\______/'
 
 # Raspian Buster Lite i3wm Install Script
 
-
+echo 
 echo '      Raspian Lite I3wm Install'
+echo
+echo '        Updated: 11/14/2019'
+
 
 # Update and Upgrade
 echo '     Updating......'
@@ -53,21 +56,23 @@ set -e
 # install python packages
 echo '     Installing Python Tools......'
 sudo pip install --upgrade pip
-#pip install pywal
+pip install pywal lolcat
 set -e
 
 echo '     Replacing config Files......'
 
 # Make Directories
-#
+sudo mkdir ~/Documents
+sudo mkdir ~/Downloads
+sudo mkdir ~/bin
 
 # Replace i3 Config
-echo '     Replacing i3 config......'
+echo '     Replacing configs......'
 sudo cp -TR ~/pii3/i3 .config/i3
 #set -e
 
 # Replace lxterminal config
-echo '     Replacing lxterminal config...... '
+#echo '     Replacing lxterminal config...... '
 sudo cp -TR ~/pii3/lxterminal ~/.config/lxterminal
 #set -e
 
@@ -78,7 +83,7 @@ sudo cp ~/pii3/i3status/config ~/.config/i3status
 #set -e
 
 # Set backround
-echo '     Setting Feh......'
+#echo '     Setting Feh......'
 sudo mkdir ~/Backrounds
 sudo cp ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 
