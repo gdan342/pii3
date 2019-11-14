@@ -18,9 +18,9 @@ echo '   |/       \_______/\_______/\______/'
 # Raspian Buster Lite i3wm Install Script
 
 echo 
-echo '      Raspian Lite I3wm Install'
+echo '  Raspian Lite I3wm Install by Brett Ling'
 echo
-echo '        Updated: 11/14/2019'
+echo '           Edited: 11/14/2019'
 echo
 echo
 
