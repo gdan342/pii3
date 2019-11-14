@@ -40,13 +40,22 @@ set -e
 echo '     Creating .xinitrc......'
 sudo touch ~/.xinitrc
 echo "#!/bin/bash" >> ~/.xinitrc
-echo "exec i3" >> ~/.xinitrc
+echo "exec i3" > ~/.xinitrc
 set -e
 
 # install i3wm
 echo '     Installing I3WM......'
 sudo apt-get install i3 i3blocks i3status  --yes
 set -e
+
+echo '    _______ __________________ ______'
+echo '   (  ____ )\__   __/\__   __// ___  \'
+echo '   | (    )|   ) (      ) (   \/   \  \'
+echo '   | (____)|   | |      | |      ___) /'
+echo '   |  _____)   | |      | |     (___ ('
+echo '   | (         | |      | |         ) \'
+echo '   | )      ___) (______) (___/\___/  /'
+echo '   |/       \_______/\_______/\______/'
 
 # install basic tools
 echo '     Installing Dependancies and Basic Tools......'
@@ -90,8 +99,8 @@ sudo cp ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 # Add ufetch to terminal
 sudo echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
 
-startx
+#startx
 
 # Reboot
-#echo '      Rebooting System......'
-#reboot
+echo '      Rebooting System......'
+reboot
