@@ -26,18 +26,18 @@ echo
 
 # Update and Upgrade
 echo
-echo '     Updating......'
+echo '     UPDATING......'
 echo
 sudo apt-get update --yes
 echo
-echo '     Upgrading......'
+echo '     UPGRADING......'
 echo
 sudo apt-get upgrade --yes
 set -e
 
 # install x server
 echo
-echo '     Installing X Server......'
+echo '     INSTALLING X SERVER......'
 echo
 sudo apt-get install --no-install-recommends xserver-xorg --yes
 sudo apt-get install --no-install-recommends xinit --yes
@@ -53,11 +53,12 @@ sudo mv ~/pii3/.xinitrc ~/
 
 # install i3wm
 echo
-echo '     Installing I3WM......'
+echo '     INSTALLING I3WM......'
 echo
 sudo apt-get install i3 i3blocks i3status  --yes
 set -e
 
+echo
 echo '    _______ __________________ ______'
 echo '   (  ____ )\__   __/\__   __// ___  \'
 echo '   | (    )|   ) (      ) (   \/   \  \'
@@ -72,17 +73,18 @@ echo
 # install basic tools
 echo
 echo
-echo '     Installing Dependancies and Basic Tools......'
+echo '     INSTALLING TOOLS......'
 echo
 sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links tty-clock wget suckless-tools lxterminal --yes
 set -e
 
 # install python packages
-echo '     Installing Python Tools......'
+echo '     UPDATE PIP & INSTALL TOOLS......'
 sudo pip install --upgrade pip
 #pip install
 set -e
 
+echo
 echo '    _______ __________________ ______'
 echo '   (  ____ )\__   __/\__   __// ___  \'
 echo '   | (    )|   ) (      ) (   \/   \  \'
@@ -95,20 +97,20 @@ echo
 echo
 echo 
 
-echo '     Replacing config Files......'
-
+echo '     REPLACING CONFIG FILES......'
+echo
 # Make Directories
 sudo mkdir ~/Documents
 sudo mkdir ~/Downloads
 sudo mkdir ~/bin
 
 # Replace i3 Config
-echo '     Replacing configs......'
+#echo '     Replacing configs......'
 sudo cp -TR ~/pii3/i3 ~/.config/i3
 set -e
 
 # Replace lxterminal config
-#echo '     Replacing lxterminal config...... '
+echo '     Replacing lxterminal config...... '
 sudo mv ~/pii3/lxterminal ~/.config/lxterminal
 #set -e
 
@@ -126,6 +128,9 @@ sudo mv ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 # Add ufetch to terminal
 sudo echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
 
+  echo
+  echo '      FINiSHED'
+  echo
 startx
 
 # Reboot
