@@ -78,8 +78,10 @@ sudo mkdir ~/Backrounds
 sudo cp ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 
 # Add ufetch to terminal
-echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
+sudo echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
+
+startx
 
 # Reboot
-echo '      Rebooting System......'
-reboot
+#echo '      Rebooting System......'
+#reboot
