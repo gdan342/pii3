@@ -21,7 +21,8 @@ echo
 echo '      Raspian Lite I3wm Install'
 echo
 echo '        Updated: 11/14/2019'
-
+echo
+echo
 
 # Update and Upgrade
 echo '     Updating......'
@@ -38,9 +39,10 @@ set -e
 
 #create xinitrc
 echo '     Creating .xinitrc......'
-echo "#!/bin/bash" >> ~/.xinitrc
-echo "exec i3" > ~/.xinitrc
-set -e
+sudo mv ~/pii3/.xinitrc ~/
+#echo "#!/bin/bash" >> ~/.xinitrc
+#echo "exec i3" > ~/.xinitrc
+#set -e
 
 # install i3wm
 echo '     Installing I3WM......'
@@ -95,19 +97,19 @@ sudo cp -TR ~/pii3/i3 .config/i3
 
 # Replace lxterminal config
 #echo '     Replacing lxterminal config...... '
-sudo cp -TR ~/pii3/lxterminal ~/.config/lxterminal
+sudo mv ~/pii3/lxterminal ~/.config/lxterminal
 #set -e
 
 # Copy i3 status
 echo '     Replacing i3 status......'
 sudo mkdir ~/.config/i3status
-sudo cp ~/pii3/i3status/config ~/.config/i3status
+sudo mv ~/pii3/i3status/config ~/.config/i3status
 #set -e
 
 # Set backround
 #echo '     Setting Feh......'
 sudo mkdir ~/Backrounds
-sudo cp ~/pii3/Backrounds/b1.jpg ~/Backrounds/
+sudo mv ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 
 # Add ufetch to terminal
 sudo echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
