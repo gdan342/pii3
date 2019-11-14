@@ -33,12 +33,14 @@ set -e
 
 # install x server
 echo '     Installing X Server......'
+echo
 sudo apt-get install --no-install-recommends xserver-xorg --yes
 sudo apt-get install --no-install-recommends xinit --yes
 set -e
 
 #create xinitrc
 echo '     Creating .xinitrc......'
+echo
 sudo mv ~/pii3/.xinitrc ~/
 #echo "#!/bin/bash" >> ~/.xinitrc
 #echo "exec i3" > ~/.xinitrc
