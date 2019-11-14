@@ -25,13 +25,18 @@ echo
 echo
 
 # Update and Upgrade
+echo
 echo '     Updating......'
+echo
 sudo apt-get update --yes
+echo
 echo '     Upgrading......'
+echo
 sudo apt-get upgrade --yes
 set -e
 
 # install x server
+echo
 echo '     Installing X Server......'
 echo
 sudo apt-get install --no-install-recommends xserver-xorg --yes
@@ -39,7 +44,7 @@ sudo apt-get install --no-install-recommends xinit --yes
 set -e
 
 #create xinitrc
-echo '     Creating .xinitrc......'
+#echo '     Creating .xinitrc......'
 echo
 sudo mv ~/pii3/.xinitrc ~/
 #echo "#!/bin/bash" >> ~/.xinitrc
@@ -47,7 +52,9 @@ sudo mv ~/pii3/.xinitrc ~/
 #set -e
 
 # install i3wm
+echo
 echo '     Installing I3WM......'
+echo
 sudo apt-get install i3 i3blocks i3status  --yes
 set -e
 
@@ -63,7 +70,10 @@ echo
 echo
 echo 
 # install basic tools
+echo
+echo
 echo '     Installing Dependancies and Basic Tools......'
+echo
 sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links tty-clock wget suckless-tools lxterminal --yes
 set -e
 
@@ -94,8 +104,8 @@ sudo mkdir ~/bin
 
 # Replace i3 Config
 echo '     Replacing configs......'
-sudo cp -TR ~/pii3/i3 .config/i3
-#set -e
+sudo cp -TR ~/pii3/i3 ~/.config/i3
+set -e
 
 # Replace lxterminal config
 #echo '     Replacing lxterminal config...... '
@@ -116,8 +126,8 @@ sudo mv ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 # Add ufetch to terminal
 sudo echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
 
-#startx
+startx
 
 # Reboot
-echo '      Rebooting System......'
-sudo reboot -h 0
+#echo '      Rebooting System......'
+#sudo reboot -h 0
