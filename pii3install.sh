@@ -30,24 +30,24 @@ set -e
 
 #create xinitrc
 echo '     Creating .xinitrc......'
-touch ~/.xinitrc
+sudo touch ~/.xinitrc
 echo "#!/bin/bash" >> ~/.xinitrc
 echo "exec i3" >> ~/.xinitrc
 set -e
 
 # install i3wm
 echo '     Installing I3WM......'
-sudo apt-get install i3  --yes
+sudo apt-get install i3 i3blocks i3status  --yes
 set -e
 
 # install basic tools
 echo '     Installing Dependancies and Basic Tools......'
-sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh git tmux links tty-clock wget suckless-tools lxterminal dmenu --yes
+sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links tty-clock wget suckless-tools lxterminal dmenu --yes
 set -e
 
 # install python packages
 echo '     Installing Python Tools......'
-pip install --upgrade pip
+sudo pip install --upgrade pip
 #pip install pywal
 set -e
 
@@ -58,24 +58,24 @@ echo '     Replacing config Files......'
 
 # Replace i3 Config
 echo '     Replacing i3 config......'
-cp -TR pii3/i3 .config/i3
+sudo cp -TR ~/pii3/i3 .config/i3
 #set -e
 
 # Replace lxterminal config
 echo '     Replacing lxterminal config...... '
-cp -TR ~/pii3/lxterminal ~/.config/lxterminal
+sudo cp -TR ~/pii3/lxterminal ~/.config/lxterminal
 #set -e
 
 # Copy i3 status
 echo '     Replacing i3 status......'
-mkdir ~/.config/i3status
-cp ~/pii3/i3status/config ~/.config/i3status
+sudo mkdir ~/.config/i3status
+sudo cp ~/pii3/i3status/config ~/.config/i3status
 #set -e
 
 # Set backround
 echo '     Setting Feh......'
-mkdir ~/Backrounds
-cp ~/pii3/Backrounds/b1.jpg ~/Backrounds
+sudo mkdir ~/Backrounds
+sudo cp ~/pii3/Backrounds/b1.jpg ~/Backrounds/
 
 # Add ufetch to terminal
 echo "bash ~/pii3/ufetch//ufetch-raspbian" >> ~/.bashrc
