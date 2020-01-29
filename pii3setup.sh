@@ -11,7 +11,8 @@ echo '   (  ____ )\__   __/\__   __// ___  \'
 echo '   | (    )|   ) (      ) (   \/   \  \'
 echo '   | (____)|   | |      | |      ___) /'
 echo '   |  _____)   | |      | |     (___ ('
-echo '   | (         | |      | |         ) \'                                          echo '   | )      ___) (______) (___/\___/  /'
+echo '   | (         | |      | |         ) \'                                          
+echo '   | )      ___) (______) (___/\___/  /'
 echo '   |/       \_______/\_______/\______/'
 
 # Raspian Buster Lite i3wm Install Script
@@ -66,7 +67,7 @@ echo
 echo
 echo '     INSTALLING TOOLS......'
 echo
-sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links --y>
+sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links --y
 sudo apt-get install  tty-clock wget lxterminal nano wicd compton --yes
 set -e
 
