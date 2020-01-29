@@ -67,8 +67,8 @@ echo
 echo
 echo '     INSTALLING TOOLS......'
 echo
-sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links --y
-sudo apt-get install  tty-clock wget lxterminal nano wicd compton --yes
+sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links --yes
+sudo apt-get install  tty-clock wget lxterminal nano wicd compton tigervnc --yes
 set -e
 
 # install python packages
