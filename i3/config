@@ -182,4 +182,4 @@ bindsym $mod+f exec pcmanfm
 #bindsym $mod+
 #bindsym $mod+
 
-exec_always feh --bg-scale ~/Backrounds/b1.jpg
+exec_always feh --bg-scale ~/Pictures/b1.jpg
