@@ -34,7 +34,7 @@ xserver_install () {
 	echo 'INSTALLING X SERVER...'
 	sudo apt-get install --no-install-recommends xserver-xorg --yes
 	sudo apt-get install --no-install-recommends xinit --yes
-	sudo mv ~/pii3/.xinitrc ~/
+	sudo mv /home/pi/pii3/.xinitrc /home/pi/
 }
 
 # install i3wm
