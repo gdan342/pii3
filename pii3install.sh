@@ -23,15 +23,15 @@ echo
 
 # Update and Upgrade
 update_upgrade () {
-	echo 'UPDATING'
+	echo 'UPDATE...'
 	sudo apt-get update --yes
-	echo 'UPGRADING'
+	echo 'UPGRADE...'
 	sudo apt-get upgrade --yes
 }
 
 # install x server
 xserver_install () {
-	echo 'INSTALLING X SERVER'
+	echo 'INSTALLING X SERVER...'
 	sudo apt-get install --no-install-recommends xserver-xorg --yes
 	sudo apt-get install --no-install-recommends xinit --yes
 	sudo cp -TR ~/pii3/.xinitrc ~/.xinitrc
@@ -39,20 +39,20 @@ xserver_install () {
 
 # install i3wm
 i3wm_install () {
-	echo 'INSTALLING I3WM'
+	echo 'INSTALLING I3WM...'
 	sudo apt-get install i3 i3blocks i3status suckless-tools  --yes
 }            
 
 # install basic tools
 pkgs_install() {
-	echo 'INSTALLING PKGS'
+	echo 'INSTALLING PKGS...'
 	sudo apt-get install leafpad htop python-pip ranger neofetch pcmanfm feh tmux links --yes
 	sudo apt-get install tty-clock wget lxterminal nano wicd compton --yes
 }
 
 # install python packages
 upgrade_pip () {
-	echo 'UGRADE PIP'
+	echo 'UGRADE PIP...'
 	sudo pip install --upgrade pip
 }
 
@@ -66,7 +66,7 @@ make_directories () {
 
 # Replace i3 Configs
 config_i3 () {
-	echo 'SETTING CONFIG FILES'
+	echo 'SETTING CONFIG FILES...'
 	sudo mkdir ~/.config/i3
 	sudo mv ~/pii3/i3/config ~/.config/i3/config 
 	
