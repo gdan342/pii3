@@ -74,13 +74,9 @@ config_i3 () {
 	sudo mv ~/pii3/lxterminal/lxterminal.conf ~/.config/lxterminal/lxterminal.conf 
 
 	sudo mkdir ~/.config/i3status
-	sudo mv ~/pii3/i3status/config ~/.config/i3status/config 
-}
-
-# Set backround
-wallpaper_set () {
-	sudo mkdir ~/Backrounds
-	sudo mv ~/pii3/Backrounds/b1.jpg ~/Backrounds/
+	sudo mv ~/pii3/i3status/config ~/.config/i3status/config
+	
+	sudo cp ~/pii3/Pirctures ~/Pictures/
 }
 
 # Add ufetch to terminal
