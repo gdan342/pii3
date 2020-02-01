@@ -67,16 +67,17 @@ make_directories () {
 # Replace i3 Configs
 config_i3 () {
 	echo 'SETTING CONFIG FILES...'
-	sudo mkdir ~/.config/i3
-	sudo mv ~/pii3/i3/config ~/.config/i3/config 
+	sudo mkdir /home/pi/.config
+	sudo mkdir /home/pi/.config/i3
+	sudo mv /home/pi/pii3/i3/config /home/pi/.config/i3/config 
 	
 	sudo mkdir ~/.config/lxterminal
-	sudo mv ~/pii3/lxterminal/lxterminal.conf ~/.config/lxterminal/lxterminal.conf 
+	sudo mv /home/pi/pii3/lxterminal/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf 
 
-	sudo mkdir ~/.config/i3status
-	sudo mv ~/pii3/i3status/config ~/.config/i3status/config
+	sudo mkdir /home/pi/.config/i3status
+	sudo mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/config
 	
-	sudo cp ~/pii3/Pirctures ~/Pictures/
+	sudo mv /home/pi/pii3/Pirctures /home/pi/Pictures/
 }
 
 # Add ufetch to terminal
