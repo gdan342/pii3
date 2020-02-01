@@ -16,7 +16,7 @@ echo '   | )      ___) (______) (___/\___/  /'
 echo '   |/       \_______/\_______/\______/'
 echo
 echo
-echo '       Raspian Lite I3wm Easy Install'
+echo '   Raspian Buster Lite I3wm Easy Install'
 echo
 echo
 }
@@ -59,6 +59,7 @@ upgrade_pip () {
 # Make Directories
 make_directories () {
 	cd $HOME
+	sudo mkdir ~/Pictures
 	sudo mkdir ~/Documents
 	sudo mkdir ~/Downloads
 	sudo mkdir ~/.bin
@@ -69,13 +70,13 @@ config_i3 () {
 	echo 'SETTING CONFIG FILES...'
 	sudo mkdir /home/pi/.config
 	sudo mkdir /home/pi/.config/i3
-	sudo mv /home/pi/pii3/i3/config /home/pi/.config/i3/config 
+	sudo mv /home/pi/pii3/i3/config /home/pi/.config/i3/
 	
 	sudo mkdir ~/.config/lxterminal
-	sudo mv /home/pi/pii3/lxterminal/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf 
+	sudo mv /home/pi/pii3/lxterminal/lxterminal.conf /home/pi/.config/lxterminal/
 
 	sudo mkdir /home/pi/.config/i3status
-	sudo mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/config
+	sudo mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/
 	
 	sudo mv /home/pi/pii3/Pirctures /home/pi/Pictures/
 }
