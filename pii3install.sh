@@ -1,9 +1,10 @@
 #!/bin/bash
 set -u
 
+echo '      STARTING......'
+
 pii3_banner () {
 echo
-echo '      STARTING......'
 echo
 echo
 echo '    _______ __________________ ______'
@@ -98,4 +99,5 @@ config_i3
 bashrc_edit
 pii3_banner
 echo '     FINISHED.....'
+
 startx
