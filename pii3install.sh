@@ -80,7 +80,9 @@ config_i3 () {
 }
 
 # Add ufetch to terminal
-	bash ~/pii3/ufetch//ufetch-raspbian >> ~/.bashrc
+bashrc_edit () {
+	echo 'bash ~/pii3/ufetch//ufetch-raspbian' >> ~/.bashrc
+{
 
 #####MAIN#####
 pii3_banner
@@ -91,6 +93,7 @@ pkgs_install
 upgrade_pip
 make_directories
 config_i3
+bashrc_edit
 pii3_banner
 echo '     FINISHED.....'
 startx
