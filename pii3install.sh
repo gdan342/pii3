@@ -84,7 +84,7 @@ config_i3 () {
 
 # Add ufetch to terminal
 bashrc_edit () {
-	echo 'bash ~/pii3/ufetch//ufetch-raspbian' >> ~/.bashrc
+	echo 'bash /home/pi/pii3/ufetch//ufetch-raspbian' >> ~/.bashrc
 }
 
 #####MAIN#####
