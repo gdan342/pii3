@@ -61,7 +61,6 @@ upgrade_pip () {
 # Make Directories
 make_directories () {
 	cd $HOME
-	sudo mkdir ~/Pictures
 	sudo mkdir ~/Documents
 	sudo mkdir ~/Downloads
 	sudo mkdir ~/.bin
