@@ -79,7 +79,7 @@ config_i3 () {
 	sudo mkdir /home/pi/.config/i3status
 	sudo mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/
 	
-	sudo mv /home/pi/pii3/Pictures /home/pi/Pictures/
+	sudo mv /home/pi/pii3/Pictures /home/pi/
 }
 
 # Add ufetch to terminal
