@@ -3,10 +3,9 @@ set -u
 
 echo
 echo '      STARTING......'
+echo
 
 pii3_banner () {
-echo
-echo
 echo
 echo '    _______ __________________ ______'
 echo '   (  ____ )\__   __/\__   __// ___  \'
