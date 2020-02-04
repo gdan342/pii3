@@ -1,5 +1,5 @@
 # Pii3 Install 
-Simple script for installing i3wm in Raspian Lite
+Simple script for installing i3wm in Raspian Buster Lite
  
  # Install i3wm and basic tools
 This will install i3wm and custom configs
