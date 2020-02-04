@@ -55,6 +55,7 @@ pkgs_install() {
 upgrade_pip () {
 	echo 'UGRADE PIP...'
 	sudo pip install --upgrade pip
+	#pip install catt lolcat 
 }
 
 # Make Directories
