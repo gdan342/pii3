@@ -1,6 +1,7 @@
 #!/bin/bash
 set -u
 
+echo
 echo '      STARTING......'
 
 pii3_banner () {
