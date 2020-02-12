@@ -17,7 +17,7 @@ echo '   | )      ___) (______) (___/\___/  /'
 echo '   |/       \_______/\_______/\______/'
 echo
 echo
-echo '   Raspian Buster Lite I3wm Easy Install'
+echo '   Raspian Buster Lite i3wm Easy Install'
 echo
 echo
 }
