@@ -99,6 +99,5 @@ config_i3
 bashrc_edit
 pii3_banner
 echo '     FINISHED.....'
-sudo rm -rf /home/pi/pii3
 
 startx
