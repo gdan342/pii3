@@ -1,7 +1,7 @@
 # Pii3 Install 
 Simple script for installing i3wm in Raspian Buster Lite
  
- # Install i3wm and basic tools
+ # Install i3wm
 This will install i3wm and custom configs
 
      sudo apt-get install git
