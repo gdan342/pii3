@@ -100,4 +100,3 @@ bashrc_edit
 pii3_banner
 echo '     FINISHED.....'
 
-startx
