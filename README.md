@@ -1,5 +1,5 @@
 # Pii3 Install 
-Simple script for installing i3wm or i3-gaps in Raspian Buster Lite
+Simple script for installing a custom i3wm environment on Raspberry Pi OS Lite, see pii3install.sh for options
  
  # Install i3wm
 This will install i3wm and custom configs
