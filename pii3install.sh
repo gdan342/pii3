@@ -35,7 +35,7 @@ xserver_install () {
 	echo 'INSTALLING X SERVER...'
 	sudo apt-get install --no-install-recommends xserver-xorg --yes
 	sudo apt-get install --no-install-recommends xinit --yes
-	sudo mv /home/pi/pii3/.xinitrc /home/pi/
+	mv /home/pi/pii3/.xinitrc /home/pi/
 }
 
 # install i3wm
@@ -61,25 +61,24 @@ upgrade_pip () {
 # Make Directories
 make_directories () {
 	cd $HOME
-	sudo mkdir ~/Documents
-	sudo mkdir ~/Downloads
-	sudo mkdir ~/.bin
+	mkdir ~/Documents
+	mkdir ~/Downloads
+	mkdir ~/.bin
 }
 
 # Replace i3 Configs
 config_i3 () {
 	echo 'SETTING CONFIG FILES...'
-	sudo mkdir /home/pi/.config
-	sudo mkdir /home/pi/.config/i3
-	sudo mv /home/pi/pii3/i3/config /home/pi/.config/i3/
+	mkdir /home/pi/.config
+	mkdir /home/pi/.config/i3
+	mv /home/pi/pii3/i3/config /home/pi/.config/i3/
 	
-	sudo mkdir ~/.config/lxterminal
-	sudo mv /home/pi/pii3/lxterminal/lxterminal.conf /home/pi/.config/lxterminal/
-
-	sudo mkdir /home/pi/.config/i3status
-	sudo mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/
+	mkdir ~/.config/lxterminal
+	mv /home/pi/pii3/lxterminal/lxterminal.conf /home/pi/.config/lxterminal
 	
-	sudo mv /home/pi/pii3/Pictures /home/pi/
+	mkdir /home/pi/.config/i3status
+	mv /home/pi/pii3/i3status/config /home/pi/.config/i3status/
+	mv /home/pi/pii3/Pictures /home/pi/
 }
 
 # Add ufetch to terminal
